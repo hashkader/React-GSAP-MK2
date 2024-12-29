@@ -15,10 +15,9 @@ export default function Model(props) {
   const group = useRef()
   const { nodes, materials } = useGLTF('/art.gltf')
 
-  // Use the useFrame hook to rotate the model on the x-axis
   useFrame(() => {
     if (group.current) {
-      group.current.rotation.y += 0.01 // Adjust speed as needed
+      group.current.rotation.y += 0.01 
     }
   })
 

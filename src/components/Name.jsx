@@ -16,11 +16,11 @@ function Name() {
   const degree = "Software & AI/ML Engineer.".split("")
   const tl = gsap.timeline()
   useEffect(() => {
-    const model = document.querySelector('.model'); // Select the .model container
-    const screenHeight = window.innerHeight; // Get the screen height
+    const model = document.querySelector('.model'); 
+    const screenHeight = window.innerHeight; 
     const screenWidth = window.innerWidth;
-    const modelHeight = model.offsetHeight; // Get the height of the .model container
-    const modelWidth = model.offsetWidth; // Get the height of the .model container
+    const modelHeight = model.offsetHeight; 
+    const modelWidth = model.offsetWidth; 
     const startY = screenHeight + modelHeight;
     const letters = document.querySelectorAll('.letter');
   
@@ -131,7 +131,6 @@ function Name() {
       //   },
       // });
   
-    // Add hover effects
     letters.forEach((letter) => {
       letter.addEventListener('mouseenter', () => {
         gsap.to(letter, {
@@ -154,7 +153,6 @@ function Name() {
       });
     });
   
-    // Cleanup listeners on component unmount
     return () => {
       letters.forEach((letter) => {
         letter.removeEventListener('mouseenter', () => {});
