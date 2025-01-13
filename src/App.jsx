@@ -1,6 +1,7 @@
 import NavBar from "./components/NavBar"
 import Name from "./components/Name"
 import { useEffect } from "react";
+import TestName from "./components/TestName";
 
 function App() {
   useEffect(() => {
@@ -10,6 +11,7 @@ function App() {
     <main className="bg-beige h-screen w-screen overflow-hidden mb-96 ">
       <NavBar/>
       <Name/>
+      {/* <TestName/> */}
     </main>
   )
 }
